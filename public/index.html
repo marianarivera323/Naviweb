@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo"><a href="#">Navi<span class="highlight">Web</span></a></div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+        </ul>
+        <!-- Updated "Get Started" Button -->
+        <button id="signup">
+            <a href="auth.html" style="text-decoration: none; color: white;">Get Started</a>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="text">
+        <h1>Know All the Fees<br>No Surprises</h1>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container">
+        <!-- Filters and Search -->
+        <div id="information-container">
+            <h2>Search Property Costs</h2>
+            <select id="county-select">
+                <option value="">Select County</option>
+            </select>
+            <select id="zipcode-select" disabled>
+                <option value="">Select ZIP Code</option>
+            </select>
+            <button id="search">Search</button>
+            <div id="result"></div>
+        </div>
+
+        <!-- Chart Section -->
+        <div id="chart-container">
+            <h2>Cost Breakdown</h2>
+            <canvas id="cost-chart"></canvas>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NaviWeb. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

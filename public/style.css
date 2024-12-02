@@ -1,0 +1,175 @@
+body {
+    background: rgb(241, 237, 235);
+    background: linear-gradient(90deg, rgba(241,237,235,1) 0%, rgba(245,244,244,1) 35%, rgba(243,238,237,1) 100%);
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    font-size: 1.8rem; /* Adjusted font size */
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar button#signup {
+    background-color: #5899ee;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button#signup:hover {
+    background-color: #367bb5;
+}
+
+.text {
+    margin-top: 120px; /* Increased margin for spacing with fixed header */
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 140px auto 20px; /* Adjusted margin for spacing */
+    max-width: 1200px;
+    gap: 20px;
+}
+
+#information-container,
+#chart-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 45%; /* Ensures equal width */
+}
+
+#information-container h2,
+#chart-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#information-container input,
+#information-container button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#information-container button {
+    background-color: #5899ee;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#information-container button:hover {
+    background-color: #367bb5;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#map {
+    margin: 20px auto 0;
+    height: 400px;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.auth-container {
+    text-align: center;
+    margin-top: 120px; /* Increased for proper spacing with fixed header */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 120px auto;
+}
+
+.auth-buttons button {
+    background-color: #5899ee;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #367bb5;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Ensure the body content doesn't cut off at the top */
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}

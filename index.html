@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviApp</title>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .highlight {
+            color: pink;
+        }
+
+        .text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        #information-container {
+            margin: 20px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        #result p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nav<span class="highlight">App</span></a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <button id="signup">Get Started</button>
+        </div>
+    </header>
+
+    <div class="text">
+        <h1>Know All the Fees<br>No Surprises</h1>
+    </div>
+
+    <main>
+        <div id="information-container">
+            <h2>Search Property Costs</h2>
+            <input type="text" id="county" placeholder="Enter County in FL" required>
+            <input type="text" id="zipcode" placeholder="Enter ZIP Code" required>
+            <button id="search">Search</button>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NaviApp. All rights reserved.</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
+

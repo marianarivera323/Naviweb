@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <style>
+        body {
+            background-image: url('background.jpeg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensure body takes full height */
+        }
+
+        .navbar1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo a {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .account-info {
+            max-width: 600px;
+            margin: 100px auto; /* Center the content with top margin */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Form background */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .account-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .account-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .btn-logout {
+            padding: 10px 20px;
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn-logout:hover {
+            background-color: #FF4026;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <div class="navbar1">
+        <button class="logo" onclick="window.close()">
+            <a href="#">Nav<span class="highlight">!</span></a>
+        </button>
+    </div>
+
+    <div class="account-info">
+        <h2>Welcome to Your Account</h2>
+        <p><strong>Firstname:</strong> Abdul-Malik</p> <!-- Replace with dynamic data -->
+        <p><strong>Lastname:</strong> Mustapha</p>   <!-- Replace with dynamic data -->
+        <p><strong>Email:</strong> mmustapha23@gmail.com</p> <!-- Replace with dynamic data -->
+        
+        <!-- You can add more dynamic user data here -->
+
+        <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Here you can implement the logout functionality if needed, for example:
+            // Clear any session data or cookies, then redirect to login page.
+      
+        }
